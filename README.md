@@ -30,17 +30,16 @@ Clean architechture provides a domain centric approach to organizing dependencie
 Insfructure is responsible for persistance and talking to the database.
 Services is a layer to bridge between Infrastucture and APIs. Also handles exceptions and validate inputs.
 
-![GameOfChance Diagram drawio](https://user-images.githubusercontent.com/1157439/150153013-355b2f5a-be00-48bb-9daf-78d5a21a81b5.png)
 
 ## Task breakdown
 - [x] Project setup with .Net Core 5
 - [x] Separate the projects to API, Core, Infrastructure and Shared tools
-- [ ] Write Tests for API and Services
+- [x] Write Tests for API and Services
 - [x] Setting up Asp.Net Core Identity on the Project
 - [x] Design db and setting up the ef-migration
 - [x] Identify the domains and separate db-infrastucture as per Clean Architecture
 - [x] Write Repositories and write related test cases
-- [x] Write Controller Api and write test cases for Game Api
+- [x] Write Controller Api and write test cases for Api
 - [x] Add validations and handle exceptions
 - [x] Run solution on docker
 - [ ] Break down Identity and Api as separate microservices
@@ -62,8 +61,16 @@ When testing with Sqlite db, it will be created at root folder when project is r
 
 ### Postman collection
 The solution is provided with a Postman collection which included all the endpoints to test the api. Environment variable collection is also shared.
-- `/api/auth/register` to register a user as player
-- `/api/auth/login` to login a player, generated token is provided with the reponse. On postman token will be set at environment variable when user loggedin
-- `/api/game/` - Post to play the bet
-- `/api/game/:id` - Get all the previous bets by the player-id
+- `/csp/products/public/product/06.04.101.1636?country=de` to get product by id(code).
+	Samples:
+	https://localhost:44306/csp/products/public/product/06.04.101.1636?country=de
+	https://localhost:44306/csp/products/public/product/32.04.101.1242?country=de
+	https://localhost:44306/csp/products/public/product/46.04.101.4566?country=de
 
+- `/csp/products/public/query?filters[country]=de&filters[gender]=MALE&filters[web_category]=Accessoires, WCA01156, WCA01159, WCA01155, WCA01152, WCA01158, WCA01153, WCA01157, WCA01154` 
+to filter product by groups, gender and country
+	Samples:
+	https://localhost:44306/csp/products/public/query?filters[country]=de&filters[gender]=MALE&filters[web_category]=Accessoires, WCA01156, WCA01159, WCA01155, WCA01152, WCA01158, WCA01153, WCA01157, WCA01154
+	https://localhost:44306/csp/products/public/query?filters[country]=de&filters[gender]=FEMALE&filters[web_category]=Pants,WCA00172,WCA00173,WCA00171
+
+- `https://localhost:44306/csp/images/image/public/F408AD8C-1740-439C-A61B-A2D5ACD30022.png?res=higher&frame=9_16`	to get image 
