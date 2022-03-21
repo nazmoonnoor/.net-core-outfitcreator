@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{354DD537-7EEE-44F8-8FB0-DFEA4A6526BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DBBA7B7A-BA1A-4BAA-9E22-B559BBE7E0D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A910F6B0-D3B8-4C94-9D1B-F37CA9C3D4F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{33CDAC36-F35D-4FEE-A079-EBED000C098F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{B9E84B9B-EFD0-4775-9690-F5ECC0DBF46F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OutfitCreator", "OutfitCreator", "{0400D134-321F-49E1-B54C-58BB71F19EAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutfitCreator", "src\Services\OutfitCreator\OutfitCreator\OutfitCreator.csproj", "{7E700AFD-027E-49D8-BEFB-0A66BB26401F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutfitCreator.Core", "src\Services\OutfitCreator\OutfitCreator.Core\OutfitCreator.Core.csproj", "{D6EE8743-370A-430D-BD70-E9CCA46117FD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutfitCreator.Infrastructure", "src\Services\OutfitCreator\OutfitCreator.Infrastructure\OutfitCreator.Infrastructure.csproj", "{406A8477-F3B5-4740-BA31-DC6F4BB5FAD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutfitCreator.Service", "src\Services\OutfitCreator\OutfitCreator.Service\OutfitCreator.Service.csproj", "{52FF30D7-4896-48FE-ACE6-D91D18E736DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutfitCreator.SharedKernel", "src\Core\OutfitCreator.SharedKernel\OutfitCreator.SharedKernel.csproj", "{DE56B4F6-5EF7-4909-BE49-9D65B9242985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutfitCreator.Tests", "tests\OutfitCreator.Tests\OutfitCreator.Tests.csproj", "{FA853577-168C-4104-8BB7-6BB9435799A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E700AFD-027E-49D8-BEFB-0A66BB26401F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E700AFD-027E-49D8-BEFB-0A66BB26401F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E700AFD-027E-49D8-BEFB-0A66BB26401F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E700AFD-027E-49D8-BEFB-0A66BB26401F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EE8743-370A-430D-BD70-E9CCA46117FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EE8743-370A-430D-BD70-E9CCA46117FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EE8743-370A-430D-BD70-E9CCA46117FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EE8743-370A-430D-BD70-E9CCA46117FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{406A8477-F3B5-4740-BA31-DC6F4BB5FAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406A8477-F3B5-4740-BA31-DC6F4BB5FAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406A8477-F3B5-4740-BA31-DC6F4BB5FAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406A8477-F3B5-4740-BA31-DC6F4BB5FAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FF30D7-4896-48FE-ACE6-D91D18E736DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FF30D7-4896-48FE-ACE6-D91D18E736DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FF30D7-4896-48FE-ACE6-D91D18E736DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FF30D7-4896-48FE-ACE6-D91D18E736DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE56B4F6-5EF7-4909-BE49-9D65B9242985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE56B4F6-5EF7-4909-BE49-9D65B9242985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE56B4F6-5EF7-4909-BE49-9D65B9242985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE56B4F6-5EF7-4909-BE49-9D65B9242985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA853577-168C-4104-8BB7-6BB9435799A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA853577-168C-4104-8BB7-6BB9435799A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA853577-168C-4104-8BB7-6BB9435799A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA853577-168C-4104-8BB7-6BB9435799A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A910F6B0-D3B8-4C94-9D1B-F37CA9C3D4F4} = {354DD537-7EEE-44F8-8FB0-DFEA4A6526BA}
+		{33CDAC36-F35D-4FEE-A079-EBED000C098F} = {354DD537-7EEE-44F8-8FB0-DFEA4A6526BA}
+		{B9E84B9B-EFD0-4775-9690-F5ECC0DBF46F} = {354DD537-7EEE-44F8-8FB0-DFEA4A6526BA}
+		{0400D134-321F-49E1-B54C-58BB71F19EAB} = {33CDAC36-F35D-4FEE-A079-EBED000C098F}
+		{7E700AFD-027E-49D8-BEFB-0A66BB26401F} = {0400D134-321F-49E1-B54C-58BB71F19EAB}
+		{D6EE8743-370A-430D-BD70-E9CCA46117FD} = {0400D134-321F-49E1-B54C-58BB71F19EAB}
+		{406A8477-F3B5-4740-BA31-DC6F4BB5FAD0} = {0400D134-321F-49E1-B54C-58BB71F19EAB}
+		{52FF30D7-4896-48FE-ACE6-D91D18E736DD} = {0400D134-321F-49E1-B54C-58BB71F19EAB}
+		{DE56B4F6-5EF7-4909-BE49-9D65B9242985} = {A910F6B0-D3B8-4C94-9D1B-F37CA9C3D4F4}
+		{FA853577-168C-4104-8BB7-6BB9435799A1} = {DBBA7B7A-BA1A-4BAA-9E22-B559BBE7E0D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F52A7CCC-9AE7-4590-BC3B-0DEB107A5DD2}
+	EndGlobalSection
+EndGlobal
